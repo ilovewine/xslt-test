@@ -15,7 +15,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           </tr>
           <xsl:for-each select="bookstore/book">
             <tr>
-              <td><xsl:value-of select="title"/></td>
+              <td>
+                <xsl:element name="a">
+                  <xsl:attribute name="href">
+                    <xsl:value-of select="link"/>
+                  </xsl:attribute>
+                  <xsl:value-of select="title"/>
+                </xsl:element>
+              </td>
               <td><xsl:value-of select="author"/></td>
               <td><xsl:value-of select="isbn"/></td>
               <td><xsl:value-of select="publicationYear"/></td>
