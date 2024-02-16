@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  width: 100vw;
+  height: 100vh;
+}
+
+.xslt {
+  flex-grow: 1;
+}
